@@ -9,8 +9,8 @@
 
 2. Download or clone this repo to your local machine from github [loopback-mobile-getting-started ](https://github.com/strongloop-community/loopback-mobile-getting-started) to a folder on iOS development machine
 ```sh
-$ git clone https://github.com/strongloop-community/loopback-ios-examples
-$ cd loopback-ios-examples
+$ git clone https://github.com/strongloop-community/loopback-examples-ios.git
+$ cd loopback-examples-ios
 ```
 
 3. Start the LoopBack Node Server 
