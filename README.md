@@ -15,11 +15,12 @@ $ cd loopback-examples-ios
 
 3. Start the LoopBack Node Server 
 ```sh
-$slc run loopback-nodejs-server/app.js
+$ node loopback-nodejs-server/server/server.js 
 ```
 
 4. inject some demo data
 ```sh
+#This script needs to be updated to include the required fields.
 ./initialize-data.sh
 ```
 
