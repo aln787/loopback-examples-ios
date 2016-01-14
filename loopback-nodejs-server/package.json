@@ -1,20 +1,36 @@
 {
-  "version": "0.0.0",
-  "main": "app.js",
-  "bin": "server.js",
+  "name": "loopback-example-app",
+  "version": "1.0.0",
+  "main": "server/server.js",
   "scripts": {
-    "start": "node app.js"
+    "pretest": "jshint .",
+    "test": "mocha -R spec server/test"
   },
   "dependencies": {
-    "loopback": "1.x >=1.6.1",
-    "request": "^2.34.0",
-    "shuffle": "^0.2.1",
-    "text-table": "^0.2.0",
-    "weighted": "^0.2.2"
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "loopback": "^2.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^2.1.0",
+    "loopback-datasource-juggler": "^2.39.0",
+    "serve-favicon": "^2.0.1",
+    "function-rate-limit": "~0.0.1",
+    "async": "~0.9.0",
+    "loopback-connector-rest": "^1.1.4"
   },
+  "devDependencies": {
+    "jshint": "^2.5.6",
+    "mocha": "^1.20.1",
+    "supertest": "^0.13.0"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "description": "loopback-example-app",
   "optionalDependencies": {
-    "loopback-explorer": "~1.1.0",
-    "loopback-push-notification": "~1.1.0"
-  },
-  "name": "loopback-nodejs-server"
+    "loopback-connector-mysql": "^1.2.1",
+    "loopback-connector-mongodb": "^1.2.5",
+    "loopback-connector-oracle": "^1.2.1"
+  }
 }

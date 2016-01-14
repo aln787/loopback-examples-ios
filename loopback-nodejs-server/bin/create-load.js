@@ -48,7 +48,7 @@ function toWeightTable(choices) {
 }
 
 function getBaseURL() {
-  var ip = process.env.IP || process.env.HOST || '127.0.0.1'
+  var ip = process.env.IP || process.env.HOST || '127.0.0.1';
   var port = process.env.PORT || 3000;
   var baseURL = 'http://' + ip + ':' + port + '/api';
   return baseURL;
@@ -59,6 +59,8 @@ function getBaseURL() {
  */
 function start() {
   request.get(getBaseURL() + '/routes', function (err, response, body) {
+    if(err)
+      throw err;
     body = toJSON(body);
 
     var routes = distillRoutes(body);
@@ -132,7 +134,7 @@ function hit(choices) {
   // Make the request.
   request[verb](getBaseURL() + path, {
     json: {}
-  }, function (err, response, body) {
+  }, function (err/*, response, body*/) {
     if (err) {
       console.error('Request error with %s: %s', route, err);
       return;
