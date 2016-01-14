@@ -5,7 +5,7 @@
 
 ##Getting Started
 
-1. Install and configure the StrongLoop Suite on your dev environment.  more information on installing LoopBack can be found in the [ StrongLoop Products ](http://strongloop.com/products
+1. Install and configure the StrongLoop Suite on your dev environment.  more information on installing LoopBack can be found in the [ StrongLoop Products ](http://strongloop.com/products)
 
 2. Download or clone this repo to your local machine from github [loopback-mobile-getting-started ](https://github.com/strongloop-community/loopback-mobile-getting-started) to a folder on iOS development machine
 ```sh
